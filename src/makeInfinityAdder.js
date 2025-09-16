@@ -15,9 +15,7 @@ function makeInfinityAdder() {
       return result;
     }
 
-    [].slice.call(arguments).forEach((num) => {
-      sum += num;
-    });
+    sum += arguments[0];
 
     return adder;
   }
